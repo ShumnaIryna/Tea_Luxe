@@ -15,6 +15,9 @@
     <link rel="icon" type="logo-s/svg" sizes="30x30" href="images/logo.svg" />
   </head>
   <body>
+    <!-- applies a gray color to the body when there is a drop-down menu -->
+    <div class="menu--shadow"></div>
+    <!-- applies a gray color the end -->
     <header class="header">
       <div class="container">
         <div class="headder__inner">
@@ -22,7 +25,20 @@
             <img src="images/logo.svg" alt="Tealuxe" />
           </a>
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <ul class="menu__list">
+              <!-- ------------------------button close -->
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="images/close.svg" alt="close" />
+                </button>
+              </li>
+              <!-- -------------------the end button close -->
               <li class="menu__item">
                 <a href="#" class="menu__link">Black</a>
               </li>
@@ -38,6 +54,41 @@
               <li class="menu__item">
                 <a href="#" class="menu__link">Pu-erh</a>
               </li>
+
+              <!-- ---------------------------mobile-nav -->
+              <li class="mobile-nav">
+                <ul class="mobile-menu">
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Contact Us</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Our Blog</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link"
+                      >Shipping and Delivery</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile-actions">
+                  <li class="mobile-actions__item">
+                    <a href="" class="mobile-actions__link"
+                      ><img src="images/cart.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="mobile-actions__item">
+                    <a href="" class="mobile-actions__link"
+                      ><img src="images/user.svg" alt=""
+                    /></a>
+                  </li>
+                  <li class="mobile-actions__item">
+                    <a href="" class="mobile-actions__link"
+                      ><img src="images/search.svg" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+              <!-- ------------------------the end mobile-nav -->
             </ul>
           </nav>
           <ul class="user-actions">
