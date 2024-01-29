@@ -230,6 +230,182 @@ body {
   display: none;
 } */
 
+/*    ----------------------------section main-blog----------------------- */
+
+.main-blog {
+  margin-bottom: 150px;
+}
+
+.main-blog__title {
+  margin-bottom: 60px;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.main-blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 58px;
+}
+
+.main-blog__item {
+  flex-basis: 542px;
+  display: flex;
+  gap: 0px 20px;
+}
+
+.main-blog__item-content {
+  display: flex;
+  flex-direction: column;
+}
+.main-blog__item-title {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  min-height: 86px;
+  margin-bottom: 10px;
+}
+
+.main-blog__item-author {
+  font-size: 13px;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.main-blog__item-link {
+  margin-top: auto;
+  position: relative;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.main-blog__item-link::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow.svg);
+  width: 5px;
+  height: 10px;
+  margin-left: 8px;
+  bottom: 3px;
+}
+
+.main-blog__link {
+  line-height: normal;
+  padding: 12px 40px;
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 0px;
+  border: 1px solid #151618;
+  background: #fff;
+  max-width: 152px;
+  cursor: pointer;
+}
+
+/*    ----------------------------section mailing-list----------------------- */
+.mailing-list {
+  padding: 100px 0px;
+  background-color: #f7f2ea;
+  margin-bottom: 150px;
+  background-image: url(..//images/bg-tea.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.mailing-list__title {
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.mailing-list__text {
+  flex-basis: 580px;
+}
+
+.mailing-list__inner {
+  display: flex;
+  gap: 60px 40px;
+}
+
+.mailing-list__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 580px;
+}
+
+.mailing-list__email::placeholder {
+  color: #b8b58b;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.mailing-list__email {
+  border: none;
+  width: 438px;
+  border-bottom: 1px solid #b8b58b;
+  background-color: transparent;
+  padding: 3px 15px;
+  margin-right: 25px;
+  color: #151618;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.mailing-list__btn {
+  padding: 12px 40px;
+  max-width: 116px;
+  background-color: #fff;
+  border: 1px solid #151618;
+  cursor: pointer;
+}
+
+.checkbox__label {
+  margin-top: 16px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.checkbox-style {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #151618;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.checkbox:checked + .checkbox-style::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #151618;
+  top: 1px;
+  left: 1px;
+}
+
+.checkbox__text {
+  font-size: 13px;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+/*    ----------------------------section priorities ----------------------- */
+
 /*    ----------------------------@media----------------------- */
 @media (max-width: 1000px) {
   .logo {
