@@ -452,14 +452,114 @@ body {
 grid-template-columns: 270px 270px 270px 270px; => repeat(4, 1fr);
 */
 
+.footer__products-title,
+.footer__company-title,
+.footer__contacts-title {
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.footer__products-item,
+.footer__company-item:not(:last-child) {
+  font-size: 16px;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+.footer__blockquote-text {
+  font-size: 16px;
+  font-style: italic;
+  line-height: normal;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.footer__blockquote-author {
+  font-size: 12px;
+  max-width: 130px;
+}
+
+.footer__blockquote-author span {
+  display: block;
+}
+
+.footer__contacts-text {
+  font-size: 13px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__nav-contacts {
+  margin-top: 20px;
+}
+
+.footer__nav-logo {
+  margin-right: 40px;
+}
+
+.footer__nav-phone,
+.footer__nav-email {
+  font-size: 13px;
+  line-height: normal;
+  margin-bottom: 20px;
+  padding-left: 32px;
+  position: relative;
+  display: block;
+}
+
+.footer__nav-email::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 22px;
+  height: 16px;
+  background-image: url(../images/mail.svg);
+}
+
+.footer__nav-phone::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 2px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../images/phone.svg);
+}
+
+.footer__social {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  gap: 0px 20px;
+}
+
+.footer__social-link {
+  display: grid;
+}
+
 .footer__bottom {
   display: flex;
 }
+
 .footer__copy {
   font-size: 16px;
   line-height: normal;
+  font-style: normal;
   margin-right: 192px;
 }
+
 .partners__logo {
   display: flex;
   align-items: center;
